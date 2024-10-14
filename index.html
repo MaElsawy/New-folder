@@ -3,15 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تواصل عبر WhatsApp</title>
+    <link rel="stylesheet" href="style.css">
+    <title>WhatsApp</title>
 </head>
 <body>
-    <h1>تواصل معنا عبر WhatsApp</h1>
-    <form action="" method="get" onsubmit="redirectToWhatsApp(); return false;">
-        <label for="phone">أدخل رقم الهاتف:</label>
-        <input type="text" id="phone" name="phone" placeholder="أدخل رقم الهاتف" required>
-        <button type="submit">إرسال</button>
-    </form>
+    <div id="container">
+        <div id="head">
+            <h1> WhatsApp تواصل معنا عبر برنامج</h1>
+        </div>
+        <div id="content">
+            <form method="get" onsubmit="redirectToWhatsApp(); return false;">
+                <input type="text" id="phone" name="phone" placeholder=" type your number" required>
+                <button type="submit">إرسال</button>
+            </form>
+        </div>
+    </div>
 
     <script>
         function redirectToWhatsApp() {
