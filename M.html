@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تواصل عبر WhatsApp</title>
+</head>
+<body>
+    <h1>تواصل معنا عبر WhatsApp</h1>
+    <form action="" method="get" onsubmit="redirectToWhatsApp(); return false;">
+        <label for="phone">أدخل رقم الهاتف:</label>
+        <input type="text" id="phone" name="phone" placeholder="أدخل رقم الهاتف" required>
+        <button type="submit">إرسال</button>
+    </form>
+
+    <script>
+        function redirectToWhatsApp() {
+            var phone = document.getElementById("phone").value;
+            var whatsappUrl = "https://wa.me/" + phone;
+            window.location.href = whatsappUrl;
+        }
+    </script>
+</body>
+</html>
